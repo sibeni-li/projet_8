@@ -1,0 +1,68 @@
+[
+    {
+        "id": 0,
+        "title": "Booki",
+        "cover": "",
+        "description": "Intégration de la page d'accueil du site Booki avec HTML - CSS",
+        "skills": [
+            "Intégration conforme à une maquette",
+            "Implémentation d'une interface responsive"
+        ],
+        "problematiques": "",
+        "githubUrl": "https://github.com/sibeni-li/projet_2"
+    },
+    {
+        "id": 1,
+        "title": "Sophie Bluel - Architecte d'intérieur",
+        "cover": "",
+        "description": "Création d'une page web dynamique avec JavaScript",
+        "skills": [
+            "Gŕer des événements utilisateurs",
+            "Récupérer des données utilisateurs dans JavaScript via des formulaires",
+            "Manipuler le DOM"
+        ],
+        "problematiques": "",
+        "githubUrl": "https://github.com/sibeni-li/Project-3"
+    },
+    {
+        "id": 2,
+        "title": "Nina Carducci - Photographe",
+        "cover": "",
+        "description": "Débug et optimisation d'un site de photographe avec les Chrome DevTools, Lighthouse et Wave",
+        "skills": [
+            "Optimiser les performances d'un site web",
+            "Débugger un site web grâce aux Chrome DevTools",
+            "Rédiger un cahier de recette pour tester un site"
+        ],
+        "problematiques": "",
+        "githubUrl": "https://github.com/sibeni-li/projet_4"
+    },
+    {
+        "id": 3,
+        "title": "Kasa",
+        "cover": "",
+        "description": "Création d'un site de location immobilière avec React et Sass",
+        "skills": [
+            "Initialiser une application avec Create React App",
+            "Configurer la navigation entre les pages de l'application avec React Router",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React",
+            "Mettre en oeuvre des animations CSS",
+            "Développer une interface web avec Sass"
+        ],
+        "problematiques": "",
+        "githubUrl": "https://github.com/sibeni-li/projet_5"
+    },
+    {
+        "id": 4,
+        "title": "Mon vieux Grimoir",
+        "cover": "",
+        "description": "Développement du back-end d'un site de notation de livres avec Node.js, Express.js et MongoDB",
+        "skills": [
+            "Implémenter un modèle de données conformément à la réglementation",
+            "Mettre en oeuvre des opérations CRUD de manière sécurisée",
+            "Stocker des données de manière sécurisée"
+        ],
+        "problematiques": "",
+        "githubUrl": "https://github.com/sibeni-li/projet_6"
+    }
+]
