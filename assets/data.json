@@ -27,7 +27,7 @@
     {
         "id": 2,
         "title": "Nina Carducci - Photographe",
-        "cover": "",
+        "cover": "/assets/images/Screenshot_Nina_Carducci.png",
         "description": "Débug et optimisation d'un site de photographe avec les Chrome DevTools, Lighthouse et Wave",
         "skills": [
             "Optimiser les performances d'un site web",
@@ -40,7 +40,7 @@
     {
         "id": 3,
         "title": "Kasa",
-        "cover": "",
+        "cover": "/assets/images/Screenshot_20240723_030608.png",
         "description": "Création d'un site de location immobilière avec React et Sass",
         "skills": [
             "Initialiser une application avec Create React App",

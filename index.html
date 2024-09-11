@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/style.css"/>
+        <script type="module" src="main.js"></script>
         <title>Lisa Sibeni - Développeuse Web</title>
     </head>
     <body>
@@ -24,9 +25,13 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Lisa Sibeni - Développeuse Web</h1>
+            <div class="title">
+                <h1>Lisa Sibeni - Développeuse Web</h1>
+                <img src="/assets/images/ls-portfolio.jpg" class="profile-picture" alt="Photo de Lisa Sibeni"/>
+            </div>
         </header>
         <main class="container">
+            <hr/>
             <section>
                 <h2 id="about">A propos de moi</h2>
                 <p>Développeuse Web Junior terminant tout juste la formation "Développeur Web" de chez OpenClarssrooms. <br/>
@@ -34,13 +39,14 @@
                     accompagner dans le développement et la réalisation de tous vos projets de sites ou d'application web.
                 </p>
             </section>
+            <hr/>
             <section class="skills">
                 <h2 id="skills">Mes compétences</h2>
                 <div class="grid">
                     <div>
                         <h3>Front-end</h3>
                         <img src="" alt=""/>
-                        <p><strong>Languages</strong>: HTML5, CSS3, Javascript</p>
+                        <p><strong>Languages</strong>: HTML5, CSS3, JavaScript</p>
                         <p><strong>Frameworks</strong>: Pico CSS, React</p>
                         <p><strong>Pré-processeurs</strong>: Sass</p>
                     </div>
@@ -61,28 +67,41 @@
                     </div>
                 </div>
             </section>
+            <hr/>
             <section>
                 <h2 id="projects">Mes projets</h2>
+                <div class="projects">
+                </div>
             </section>
+            <hr/>
             <section class="contact">
                 <h2 id="contact">Me contacter</h2>
-                <form>
+                <form method="post" >
                     <fieldset>
                         <label>
                             Votre nom
-                            <input name="name" placeholder="Votre nom"/>
+                            <input name="name" id="name" placeholder="Votre nom"/>
+                        </label>
+                        <label>
+                            Votre nom de société
+                            <input name="name-society" id="name-society" placeholder="Votre nom de société"/>
                         </label>
                         <label>
                             Email
-                            <input type="email" name="email" placeholder="email@example.com"/>
+                            <input type="email" name="email" id="email" placeholder="email@example.com"/>
                         </label>
-                        <textarea name="message" placeholder="Votre message ici..."></textarea>
+                        <label>
+                            Votre message
+                            <textarea name="message" id="message" placeholder="Votre message ici..."></textarea>
+                        </label>
                     </fieldset>
+                    <input type="submit" value="Envoyer"/>
                 </form>
             </section>
+            <hr/>
         </main>
         <footer>
-
+            <p> © 2024, Tous droits réservés</p>
         </footer>
     </body>
     </html>
