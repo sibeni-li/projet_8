@@ -90,3 +90,36 @@ form {
 footer {
     text-align: center;
 }
+
+.div-logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.link-logo {
+    width: 3%;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media (min-width : 375px) and (max-width : 1024px) {
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .cover {
+        position: relative;
+        left: 25%;
+    }
+
+    .cover:hover{
+        transform: scale(2);
+    }
+    
+}
