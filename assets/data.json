@@ -2,7 +2,7 @@
     {
         "id": 0,
         "title": "Booki",
-        "cover": "",
+        "cover": "assets/images/Screenshot_Booki.png",
         "description": "Intégration de la page d'accueil du site Booki avec HTML - CSS",
         "skills": [
             "Intégration conforme à une maquette",
@@ -14,10 +14,10 @@
     {
         "id": 1,
         "title": "Sophie Bluel - Architecte d'intérieur",
-        "cover": "",
+        "cover": "assets/images/Screenshot_Sophie_Bluel.png",
         "description": "Création d'une page web dynamique avec JavaScript",
         "skills": [
-            "Gŕer des événements utilisateurs",
+            "Gérer des événements utilisateurs",
             "Récupérer des données utilisateurs dans JavaScript via des formulaires",
             "Manipuler le DOM"
         ],
@@ -55,7 +55,7 @@
     {
         "id": 4,
         "title": "Mon vieux Grimoir",
-        "cover": "",
+        "cover": "assets/images/Screenshot_Vieux_Grimoir.png",
         "description": "Développement du back-end d'un site de notation de livres avec Node.js, Express.js et MongoDB",
         "skills": [
             "Implémenter un modèle de données conformément à la réglementation",
