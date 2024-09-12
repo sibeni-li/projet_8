@@ -1,10 +1,11 @@
 /*Projects section*/
 const response = await fetch('/assets/data.json');
 const projects = await response.json();
-console.log(projects);
 
+/*Create projects section*/
 function getProjects(projects){
     projects.forEach(element => {
+
         const divProjects = document.querySelector(".projects");
 
         const card = document.createElement("article");
@@ -22,6 +23,7 @@ function getProjects(projects){
 
         const githubLink = document.createElement("a");
         githubLink.href = element.githubUrl;
+        githubLink.setAttribute("target" , "_blank")
         githubLink.innerText = "Lien du repo GitHub";
 
         const desc = document.createElement("h4");
@@ -29,8 +31,10 @@ function getProjects(projects){
         
         const p = document.createElement("p");
         p.innerText = element.description;
+
+        const details = document.createElement("details")
         
-        const skillsTitle = document.createElement("h4");
+        const skillsTitle = document.createElement("summary");
         skillsTitle.innerText = "Compétences développées:";
 
         const list = document.createElement("ul");
@@ -41,28 +45,32 @@ function getProjects(projects){
         card.appendChild(cardText);
 
         cardText.appendChild(cardTitle);
-        cardText.appendChild(githubLink);
         cardText.appendChild(desc);
         cardText.appendChild(p);
-        cardText.appendChild(skillsTitle);
-        cardText.appendChild(list);
+        cardText.appendChild(details);
 
+        details.appendChild(skillsTitle);
+        details.appendChild(list);
+        
         for(let i=0; i<element.skills.length; i++){
             const skills = document.createElement("li");
             skills.innerText = element.skills[i];
             list.appendChild(skills);
         };
+
+        cardText.appendChild(githubLink);
     });
 };
 
-getProjects(projects)
-
+getProjects(projects);
 
 /*Contact form*/
 const form = document.querySelector('form');
 
 form.addEventListener("submit", (event) => {
+
     event.preventDefault();
+
     const name = document.getElementById('name').value;
     const nameSociety = document.getElementById('name-society').value;
     const email = document.getElementById('email').value;
@@ -73,3 +81,6 @@ form.addEventListener("submit", (event) => {
     console.log(email);
     console.log(message);
 });
+/**
+ * TODO : Connect form
+ */
