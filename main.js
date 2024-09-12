@@ -26,16 +26,22 @@ function getProjects(projects){
         githubLink.setAttribute("target" , "_blank")
         githubLink.innerText = "Lien du repo GitHub";
 
+        const problems = document.createElement("h4");
+        problems.innerText = "Problématiques rencontrées";
+
+        const problemsDesc = document.createElement("p");
+        problemsDesc.innerText = element.problems;
+
         const desc = document.createElement("h4");
-        desc.innerText = "Description:";
+        desc.innerText = "Description";
         
         const p = document.createElement("p");
         p.innerText = element.description;
 
-        const details = document.createElement("details")
+    
         
-        const skillsTitle = document.createElement("summary");
-        skillsTitle.innerText = "Compétences développées:";
+        const skillsTitle = document.createElement("h4");
+        skillsTitle.innerText = "Compétences développées";
 
         const list = document.createElement("ul");
         
@@ -47,10 +53,10 @@ function getProjects(projects){
         cardText.appendChild(cardTitle);
         cardText.appendChild(desc);
         cardText.appendChild(p);
-        cardText.appendChild(details);
-
-        details.appendChild(skillsTitle);
-        details.appendChild(list);
+        cardText.appendChild(problems);
+        cardText.appendChild(problemsDesc)
+        cardText.appendChild(skillsTitle);
+        cardText.appendChild(list);
         
         for(let i=0; i<element.skills.length; i++){
             const skills = document.createElement("li");

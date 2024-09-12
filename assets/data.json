@@ -8,7 +8,7 @@
             "Intégration conforme à une maquette",
             "Implémentation d'une interface responsive"
         ],
-        "problematiques": "",
+        "problems": "",
         "githubUrl": "https://github.com/sibeni-li/projet_2"
     },
     {
@@ -21,7 +21,7 @@
             "Récupérer des données utilisateurs dans JavaScript via des formulaires",
             "Manipuler le DOM"
         ],
-        "problematiques": "",
+        "problems": "",
         "githubUrl": "https://github.com/sibeni-li/Project-3"
     },
     {
@@ -34,7 +34,7 @@
             "Débugger un site web grâce aux Chrome DevTools",
             "Rédiger un cahier de recette pour tester un site"
         ],
-        "problematiques": "",
+        "problems": "",
         "githubUrl": "https://github.com/sibeni-li/projet_4"
     },
     {
@@ -49,7 +49,7 @@
             "Mettre en oeuvre des animations CSS",
             "Développer une interface web avec Sass"
         ],
-        "problematiques": "",
+        "problems": "",
         "githubUrl": "https://github.com/sibeni-li/projet_5"
     },
     {
@@ -62,7 +62,7 @@
             "Mettre en oeuvre des opérations CRUD de manière sécurisée",
             "Stocker des données de manière sécurisée"
         ],
-        "problematiques": "",
+        "problems": "",
         "githubUrl": "https://github.com/sibeni-li/projet_6"
     }
 ]
