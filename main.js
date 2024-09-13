@@ -27,7 +27,9 @@ function getProjects(projects){
         githubLink.innerText = "Lien du repo GitHub";
 
         const problems = document.createElement("h4");
-        problems.innerText = "Problématiques rencontrées";
+        problems.innerText = "Problématiques et résolution";
+
+        
 
         const problemsDesc = document.createElement("p");
         problemsDesc.innerText = element.problems;
@@ -37,8 +39,6 @@ function getProjects(projects){
         
         const p = document.createElement("p");
         p.innerText = element.description;
-
-    
         
         const skillsTitle = document.createElement("h4");
         skillsTitle.innerText = "Compétences développées";
@@ -82,11 +82,28 @@ form.addEventListener("submit", (event) => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    console.log(name);
-    console.log(nameSociety);
-    console.log(email);
-    console.log(message);
-});
+    fetch('/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: name,
+            nameSociety: nameSociety,
+            email: email,
+            message: message,
+        }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Message envoyé avec succès!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Erreur lors de l\'envoi du message.');
+    });
+})
 /**
  * TODO : Connect form
  */
