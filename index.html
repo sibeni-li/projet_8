@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="fr">
     <head>
+        <!-- meta title, description,...-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="color-scheme" content="light dark">
+        <title>Lisa Sibeni - Développeuse Web</title>
+        <meta name="description" content="Lisa Sibeni, développeuse web junior, donne vie à tous vos projets de site ou application web">
+        <!--stylesheets-->
         <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css"
@@ -12,12 +16,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/style.css"/>
+        <!--Scripts-->
         <script type="module" src="main.js"></script>
-        <title>Lisa Sibeni - Développeuse Web</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="#about">A propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
@@ -36,7 +40,7 @@
             <section>
                 <h2 id="about">A propos de moi</h2>
                 <p>Développeuse Web Junior terminant tout juste la formation "Développeur Web" de chez OpenClarssrooms. <br/>
-                    Passionnée par la proggrammation et plus particulièrement le web, je me ferai un plaisir de vous 
+                    Passionnée par la programmation et plus particulièrement le web, je me ferai un plaisir de vous 
                     accompagner dans le développement et la réalisation de tous vos projets de sites ou d'application web.
                 </p>
                 <div class="div-logo">
@@ -78,11 +82,11 @@
             <hr/>
             <section class="contact">
                 <h2 id="contact">Me contacter</h2>
-                <form method="post" >
+                <form method="post" action="/send-email" class="form">
                     <fieldset>
                         <label>
                             Votre nom
-                            <input name="name" id="name" placeholder="Votre nom"/>
+                            <input name="name" id="name" placeholder="Votre nom" autocomplete="name"/>
                         </label>
                         <label>
                             Votre nom de société
@@ -90,7 +94,7 @@
                         </label>
                         <label>
                             Email
-                            <input type="email" name="email" id="email" placeholder="email@example.com"/>
+                            <input type="email" name="email" id="email" placeholder="email@example.com" autocomplete="email"/>
                         </label>
                         <label>
                             Votre message
@@ -102,7 +106,7 @@
             </section>
             <hr/>
         </main>
-        <footer>
+        <footer class="footer">
             <p> © 2024, Tous droits réservés</p>
         </footer>
     </body>
