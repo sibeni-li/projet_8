@@ -95,7 +95,6 @@ h2 {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 /*Contact section*/
@@ -107,6 +106,10 @@ h2 {
 
 .form {
     width: 60%;
+}
+
+fieldset legend { 
+    display: none;
 }
 
 /*footer*/
@@ -126,7 +129,6 @@ h2 {
 
     .card-text {
         padding: 10px;
-        gap: 5px;
     }
 
     .cover {
