@@ -104,6 +104,7 @@ form.addEventListener("submit", (event) => {
     .then(data => {
         console.log('Success:', data);
         alert('Message envoyé avec succès!');
+        form.reset();
     })
     .catch((error) => {
         console.error('Error:', error);
