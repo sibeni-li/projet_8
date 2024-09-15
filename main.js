@@ -14,6 +14,7 @@ function getProjects(projects){
         const imageCard = document.createElement("img");
         imageCard.src = element.cover;
         imageCard.setAttribute("class", "cover");
+        imageCard.setAttribute("alt", "Photo du site : " + element.title);
 
         const cardText = document.createElement("div");
         cardText.setAttribute("class" , "card-text");
@@ -58,7 +59,7 @@ function getProjects(projects){
         cardText.appendChild(skillsTitle);
         cardText.appendChild(list);
         
-        for(let i=0; i<element.skills.length; i++){
+        for (let i = 0; i < element.skills.length; i++){
             const skills = document.createElement("li");
             skills.innerText = element.skills[i];
             list.appendChild(skills);
@@ -82,7 +83,7 @@ form.addEventListener("submit", (event) => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    fetch('/send-email', {
+    fetch('http://localhost:3000/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -94,7 +95,12 @@ form.addEventListener("submit", (event) => {
             message: message,
         }),
     })
-    .then(response => response.json())
+    .then(response => {
+        if (response.ok) {
+            return  response.json()
+        }
+        throw new Error('Erreur lors de l\'envoi du message');
+    })
     .then(data => {
         console.log('Success:', data);
         alert('Message envoyé avec succès!');
@@ -103,7 +109,4 @@ form.addEventListener("submit", (event) => {
         console.error('Error:', error);
         alert('Erreur lors de l\'envoi du message.');
     });
-})
-/**
- * TODO : Connect form
- */
+});
