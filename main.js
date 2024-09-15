@@ -83,7 +83,7 @@ form.addEventListener("submit", (event) => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    fetch('https://portfolio-sender-email.onrender.com/send-email', {
+    fetch('https://portfolio-sender-email.onrender.com:3000/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
