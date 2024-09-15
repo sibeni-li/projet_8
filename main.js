@@ -102,9 +102,9 @@ form.addEventListener("submit", (event) => {
         throw new Error('Erreur lors de l\'envoi du message');
     })
     .then(data => {
+        form.reset();
         console.log('Success:', data);
         alert('Message envoyé avec succès!');
-        form.reset();
     })
     .catch((error) => {
         console.error('Error:', error);
