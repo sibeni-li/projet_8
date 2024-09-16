@@ -70,7 +70,7 @@ h2 {
 /*Projects section*/
 .projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 50px;
 }
 
@@ -97,6 +97,12 @@ h2 {
     flex-direction: column;
 }
 
+.card-link {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
 /*Contact section*/
 .contact {
     display: flex;
@@ -117,7 +123,9 @@ fieldset legend {
     text-align: center;
 }
 
+/* Media queries for responsiveness */
 @media (max-width : 1280px) {
+    /* Adjustments for larger screens */
     .profile-picture {
         max-width: 50%;
     }
@@ -143,12 +151,14 @@ fieldset legend {
 }
 
 @media (max-width : 1023.9px) {
+    /* Adjustments for medium screens */
     .link-logo {
         width: 10%;
     }
 }
 
 @media (max-width : 768px) {
+    /* Adjustments for smaller screens */
     .title {
         gap: 50px;
     }
