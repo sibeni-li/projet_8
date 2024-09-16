@@ -9,7 +9,8 @@
             "Implémentation d'une interface responsive"
         ],
         "problems": "J'ai rencontré des difficultés avec Flexbox pour la mise en place du responsive, notamment la hiérarchie des sélecteurs CSS vis-à-vis de la structure HTML.\nPour remédier à ce problème, j'ai lu beaucoup de documentation sur Flexbox (mdn,...) et j'ai aussi beaucoup \"joué\" avec le CSS sur codepen.io. Cela m'a permis d'intégrer la page d'accueil de Booki correctement, avec une compréhension claire des comportements CSS.",
-        "githubUrl": "https://github.com/sibeni-li/projet_2"
+        "githubUrl": "https://github.com/sibeni-li/projet_2",
+        "siteUrl":"https://booki-4el.pages.dev"
     },
     {
         "id": 1,
@@ -22,7 +23,8 @@
             "Manipuler le DOM"
         ],
         "problems": "Les plus grands défis ont été la mise en place les appels API et la modale.\nPour l'API, je me suis longuement référée aux cours OpenClassrooms et à la documentation mdn.\nPour la modale, j'ai suivi le tuto de Grafikart.fr, car il est très bien expliqué et permet de bien comprendre le code. Grâce à cela, j'ai finalement réussi à terminer ce projet.",
-        "githubUrl": "https://github.com/sibeni-li/Project-3"
+        "githubUrl": "https://github.com/sibeni-li/Project-3",
+        "siteUrl":"https://sophie-bluel.pages.dev/"
     },
     {
         "id": 2,
@@ -35,7 +37,8 @@
             "Rédiger un cahier de recette pour tester un site"
         ],
         "problems": "L'objectif était l'optimisation des performances du site. En effet, il fallait faire un travail de fond, nottament sur les images en perdant le moins possible en qualité.\nPour résoudre ce problème, je me suis renseignée sur la compression des formats actuels d'image (webp, avif), qui permettent un excellent ratio qualité:compression.",
-        "githubUrl": "https://github.com/sibeni-li/projet_4"
+        "githubUrl": "https://github.com/sibeni-li/projet_4",
+        "siteUrl":"https://sibeni-li.github.io/projet_4"
     },
     {
         "id": 3,
@@ -50,7 +53,8 @@
             "Développer une interface web avec Sass"
         ],
         "problems": "J'avais quelques incompréhensions fondamentales dans l'utilisation des hooks, et des props entre les composants.\nJ'ai été voir des vidéos YouTube (entre autres \"Apprendre React en 1h\" de \"ViDev\"), qui m'ont vraiment permis d'avoir une vision plus claire du fonctionnement de React et des composants.",
-        "githubUrl": "https://github.com/sibeni-li/projet_5"
+        "githubUrl": "https://github.com/sibeni-li/projet_5",
+        "siteUrl":"https://kasa-app.pages.dev"
     },
     {
         "id": 4,
@@ -63,6 +67,7 @@
             "Stocker des données de manière sécurisée"
         ],
         "problems": "Je n'ai pas rencontré de difficulté majeure ; juste une petite erreur de logique.\nJe me suis aidée de la doc, et surtout j'ai relu mon code, jusqu'à m'apercevoir qu'il manquait une instruction.",
-        "githubUrl": "https://github.com/sibeni-li/projet_6"
+        "githubUrl": "https://github.com/sibeni-li/projet_6",
+        "siteUrl":"https://vg-frontend.pages.dev/"
     }
 ]
