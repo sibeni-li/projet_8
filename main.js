@@ -98,7 +98,7 @@ form.addEventListener("submit", (event) => {
     const message = document.getElementById('message').value;
 
     // Send form data to backend
-    fetch('https://portfolio-sender-email.onrender.com/send-email', {
+    fetch('https://pt01.sibeni.dev/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
